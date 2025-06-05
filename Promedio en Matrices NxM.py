@@ -7,7 +7,7 @@ def calcular_promedio_manual(matriz):
 
 def main():
     try:
-        # Pedir tamaño de la matriz al usuario
+        # Pedir tamaño de la matriz al usuario desde teclado
         n = int(input("Ingrese el número de filas (n): "))
         m = int(input("Ingrese el número de columnas (m): "))
         
