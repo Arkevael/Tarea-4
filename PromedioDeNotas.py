@@ -17,7 +17,7 @@ def main():
             
             creditos = int(input(f"Ingrese el número de créditos de la materia {i + 1}: "))
             if creditos <= 0:
-                raise ValueError("Los créditos deben ser un número positivo.")
+                raise ValueError("Los créditos deben ser un número positivo NO NEGATIVO.")
             
             materias.append((nota, creditos))
         
