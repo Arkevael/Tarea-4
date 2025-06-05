@@ -1,3 +1,4 @@
+# Codigo de verciones
 Kfrutas = int(input(""))
 resultado= (Kfrutas*2)/3
 
