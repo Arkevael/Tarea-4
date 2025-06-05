@@ -7,8 +7,8 @@ USE INTERBANK;
 CREATE TABLE usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50),
-    apellido_paterno VARCHAR(50),
-    apellido_materno VARCHAR(50),
+    apellido_paterno VARCHAR(500),
+    apellido_materno VARCHAR(500),
     tipo ENUM('Administrador', 'Cajero', 'Gerente', 'Asesor', 'Supervisor'),
     email VARCHAR(50),
     password VARCHAR(255)
