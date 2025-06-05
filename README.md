@@ -1,7 +1,6 @@
 # Proyecto 
 Tarea de ADSI2
 
-Avanze del 27/02/2025 :
 ## Pasos realizados :
 1. **Subida de archivos iniciales**  
    - Se agregaron los archivos `Matrices NxM.py` y `PromedioDeNotas.py`.
