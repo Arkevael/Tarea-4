@@ -1,24 +1,39 @@
-# Proyecto 
-Tarea de ADSI2
+# Proyecto ADSI2 - Tarea 4
 
-## Pasos realizados :
-1. **Subida de archivos iniciales**  
-   - Se agregaron los archivos `Matrices NxM.py` y `PromedioDeNotas.py`.
+Herramientas para cálculos académicos y matriciales
 
-2. **Modificación y mejora de la calculadora**  
-   - Se reemplazó la versión de consola por una con **interfaz gráfica** usando `tkinter`.  
-   - Se consolidaron las funciones en un solo método `operar()`.  
-   - Se añadió la operación de **potencia**.  
-   - Se mejoró la validación de entrada y el manejo de errores.  
+## 📦 Contenido del proyecto
 
-3. **Actualización del README.md**  
-   - Se documentaron los cambios realizados.  
-   - Se incluyeron instrucciones para ejecutar la calculadora.  
+### 🧮 Módulos principales:
+1. **`Matrices_NxM.py`**  
+   - Operaciones con matrices de dimensiones arbitrarias  
+   - Incluye: suma, resta, multiplicación y transpuesta  
+   - Validación de dimensiones compatibles  
 
----
+2. **`PromedioDeNotas.py`**  
+   - Cálculo de promedio ponderado por créditos  
+   - Sistema de evaluación sobre 20 puntos  
+   - Detección automática de aprobación (≥10.5)  
 
-## Archivos agregados y modificados:
-✅ **Matrices NxM.py** - Implementación de cálculos con matrices de dimensiones NxM.  
-✅ **PromedioDeNotas.py** - Cálculo del promedio de notas a partir de Nro. de Creditos y Cursos.  
-✅ **Mejoras en calculadora.py**  
-✅ **Actualización del README.md** 
+3. **`calculadora.py`** (Versión mejorada)  
+   - **Nueva interfaz gráfica** con Tkinter  
+   - Operaciones básicas: +, -, *, /, ^ (potencia)  
+   - Validación robusta de entradas  
+
+## ✨ Mejoras implementadas
+
+### 🔧 En la calculadora:
+```python
+def operar():
+    try:
+        num1 = float(entrada1.get())
+        num2 = float(entrada2.get())
+        operacion = operador.get()
+        
+        if operacion == '+':
+            resultado.set(num1 + num2)
+        elif operacion == '-':
+            resultado.set(num1 - num2)
+        # ... otras operaciones ...
+    except ValueError:
+        messagebox.showerror("Error", "Entradas inválidas")
